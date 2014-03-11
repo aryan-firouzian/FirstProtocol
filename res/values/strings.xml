@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Firstprotocol</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="G1">G1</string>
+    <string name="R1">R1</string>
+    <string name="G2">G2</string>
+    <string name="R2">R2</string>
+    <string name="G3">G3</string>
+    <string name="R3">R3</string>
+    <string name="G4">G4</string>
+    <string name="R4">R4</string>
+    <string name="G5">G5</string>
+    <string name="R5">R5</string>
+    <string name="G6">G6</string>
+    <string name="R6">R6</string>
+    <string name="G7">G7</string>
+    <string name="R7">R7</string>
+    <string name="G8">G8</string>
+    <string name="R8">R8</string>
+    <string name="G9">G9</string>
+    <string name="R9">R9</string>
+    <string name="G10">G10</string>
+    <string name="R10">R10</string>
+    <string name="G11">G11</string>
+    <string name="R11">R11</string>
+    <string name="G12">G12</string>
+    <string name="R12">R12</string>
+    <string name="Start">Start</string>
+    <string name="Reset">Reset</string>
+    <string name="Connect">Connect</string>
+    <string-array name="BlinkingTime">
+		<item>3</item>
+		<item>5</item>
+	</string-array>
+	<string-array name="NotBlinkingTime">
+		<item>5</item>
+		<item>10</item>
+	</string-array>
+	<string-array name="Frequency">
+		<item>1</item>
+		<item>1.5</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="OnTimeInFrequency">
+		<item>25%</item>
+		<item>50%</item>
+	</string-array>
+    <string name="BlinkingTime">Seconds of Blinking</string>
+    <string name="NotBlinkingTime">Seconds off</string>
+    <string name="Frequency">Frequency of Blinking</string>
+    <string name="OnTimeInFrequency">On time in each ferequency cycle</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Devices</string>
+	<string name="button_scan">Scan</string>    
+	<string name="none_paired">No Paired Devices</string>
+	<string name="none_found">None Found!</string>
+	
+</resources>
