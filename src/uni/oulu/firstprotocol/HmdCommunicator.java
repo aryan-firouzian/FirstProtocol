@@ -7,14 +7,12 @@ package uni.oulu.firstprotocol;
 
 public interface HmdCommunicator{
 
-	public boolean sendData(long data);
+	public boolean sendData(String data);
 	public boolean sendData(int data);
 	public boolean sendData(byte data);
+	public boolean sendData(long data);
 	
 	public boolean isConnected();
-
-	
-	public void findDevice();
 	
 	public void doStart();
 	
