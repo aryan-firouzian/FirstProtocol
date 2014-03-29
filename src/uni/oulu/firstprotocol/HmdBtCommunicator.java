@@ -19,6 +19,8 @@
 
 package uni.oulu.firstprotocol;
 
+import java.util.Hashtable;
+
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -30,6 +32,30 @@ import android.util.Log;
 
 public class HmdBtCommunicator implements HmdCommunicator {
 
+	public static final long[] DIR_GOAL_VAL = {0x80208220,0x0};
+	public static final long[] DIR_START_VAL = {0x80ffffff,0x0};
+	public static final long[] DIR_RIGHT_VAL = {0x800a0000,0x0};
+	public static final long[] DIR_LEFT_VAL = {0x80000802,0x0};
+	public static final long[] DIR_UP_VAL = {0x80008200,0x0};
+	public static final long[] DIR_DOWN_VAL = {0x80200020,0x0};
+	public static final long[] DIR_LEFT_DOWN_VAL = {0x80000022,0x0};
+	public static final long[] DIR_RIGHT_DOWN_VAL = {0x80280000,0x0};
+	public static final long[] DIR_LEFT_UP_VAL = {0x80000a00,0x0};
+	public static final long[] DIR_RIGHT_UP_VAL = {0x80028000,0x0};
+	public static final long[] DIR_NONE_VAL = {0x0};
+	
+	public static final String DIR_GOAL_KEY = "GOAL";
+	public static final String DIR_START_KEY = "START";
+	public static final String DIR_RIGHT_KEY = "RIGHT";
+	public static final String DIR_LEFT_KEY = "LEFT";
+	public static final String DIR_UP_KEY = "UP";
+	public static final String DIR_DOWN_KEY = "DOWN";
+	public static final String DIR_LEFT_DOWN_KEY = "LEFT_DOWN";
+	public static final String DIR_RIGHT_DOWN_KEY = "RIGHT_DOWN";
+	public static final String DIR_LEFT_UP_KEY = "LEFT_UP";
+	public static final String DIR_RIGHT_UP_KEY = "RIGHT_UP";
+	public static final String DIR_NONE_KEY = "NONE";
+	
     // Intent request codes
     public static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
     public static final int REQUEST_CONNECT_DEVICE_INSECURE = 2;
@@ -42,6 +68,9 @@ public class HmdBtCommunicator implements HmdCommunicator {
     public static final int MESSAGE_DEVICE_NAME = 4;
     public static final int MESSAGE_TOAST = 5;
     
+    public static final int SEND_NEXT_DATA = 6;
+    public static final int DELAYED_SEND = 7;
+    
     // Key names received from the BluetoothChatService Handler
     public static final String DEVICE_NAME = "device_name";
     
@@ -51,22 +80,40 @@ public class HmdBtCommunicator implements HmdCommunicator {
 	private Activity activity_context = null;
 	private boolean bConnected = false;
 	private long last_data = 0x0;
-
+	private String last_string_data = null;
 	
-	public HmdBtCommunicator(Activity a) {
+	private int mRepeatCount=0;
+	
+	private Hashtable<String,DirectionPattern> directions = new Hashtable<String,DirectionPattern>();
+	
+	public HmdBtCommunicator(Activity a, Hashtable<String, DirectionPattern> dirs) {
 		activity_context = a;
 		mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        doStart();
 		
-		/*if (!mBluetoothAdapter.isEnabled()) {
-            Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            a.startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
-		}else {*/
-        /*    if (mBluetoothAdapter.isEnabled())
-            	if (mChatService == null) 
-            		setupChat();
-        }*/
-		
+		if (dirs != null) {
+			directions = dirs;
+		}
+		else {
+			directions.put( DIR_GOAL_KEY, new DirectionPattern(DIR_GOAL_VAL, 0,0,0));
+			directions.put( DIR_START_KEY, new DirectionPattern(DIR_START_VAL, 0,0,0));
+			directions.put( DIR_RIGHT_KEY, new DirectionPattern(DIR_RIGHT_VAL, 0,0,0));
+			directions.put( DIR_LEFT_KEY, new DirectionPattern(DIR_LEFT_VAL, 0,0,0));
+			directions.put( DIR_UP_KEY, new DirectionPattern(DIR_UP_VAL, 0,0,0));
+			directions.put( DIR_DOWN_KEY, new DirectionPattern(DIR_DOWN_VAL,0,0,0));
+			directions.put( DIR_LEFT_DOWN_KEY, new DirectionPattern(DIR_LEFT_DOWN_VAL, 0,0,0));
+			directions.put( DIR_RIGHT_DOWN_KEY, new DirectionPattern(DIR_RIGHT_DOWN_VAL, 0,0,0));
+			directions.put( DIR_LEFT_UP_KEY, new DirectionPattern(DIR_LEFT_UP_VAL, 0,0,0));
+			directions.put( DIR_RIGHT_UP_KEY, new DirectionPattern(DIR_RIGHT_UP_VAL, 0,0,0));
+			directions.put( DIR_NONE_KEY, new DirectionPattern(DIR_NONE_VAL, 0,0,0));
+		}
+	}
+	
+	public Hashtable<String,DirectionPattern> getDirections() {
+		return directions;
+	}
+	
+	public void setDirections(Hashtable<String,DirectionPattern> d) {
+		directions=d;
 	}
 	
 	@Override
@@ -86,6 +133,7 @@ public class HmdBtCommunicator implements HmdCommunicator {
 	
 	@Override
 	public void doResume() {
+		
 		if (mChatService != null) {
             // Only if the state is STATE_NONE, do we know that we haven't started already
             if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
@@ -113,8 +161,10 @@ public class HmdBtCommunicator implements HmdCommunicator {
         //mOutStringBuffer = new StringBuffer("");
     }
 	
-	public void connectDevice(String address, boolean secure) {
-
+	public void connectDevice(Intent data, boolean secure) {
+        // Get the device MAC address
+        String address = data.getExtras()
+            .getString(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
         // Get the BluetoothDevice object
         BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
         // Attempt to connect to the device
@@ -127,7 +177,6 @@ public class HmdBtCommunicator implements HmdCommunicator {
 		Intent serverIntent = null;
 		serverIntent = new Intent(activity_context, DeviceListActivity.class);
         activity_context.startActivityForResult(serverIntent, HmdBtCommunicator.REQUEST_CONNECT_DEVICE_INSECURE);
-        //connectDevice(serverIntent,false);
 	}
 	
 	@Override
@@ -153,46 +202,41 @@ public class HmdBtCommunicator implements HmdCommunicator {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-            case MESSAGE_STATE_CHANGE:
-                //if(D) Log.i(TAG, "MESSAGE_STATE_CHANGE: " + msg.arg1);
-                switch (msg.arg1) {
-                case BluetoothChatService.STATE_CONNECTED:
-                	bConnected = true;
-                    //setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
-                    //mConversationArrayAdapter.clear();
-                    break;
-                case BluetoothChatService.STATE_CONNECTING:
-                    //setStatus(R.string.title_connecting);
-                    break;
-                case BluetoothChatService.STATE_LISTEN:
-                case BluetoothChatService.STATE_NONE:
-                    //setStatus(R.string.title_not_connected);
-                    break;
-                }
-                break;
-            case MESSAGE_WRITE:
-                byte[] writeBuf = (byte[]) msg.obj;
-                // construct a string from the buffer
-                String writeMessage = new String(writeBuf);
-                //mConversationArrayAdapter.add("Me:  " + writeMessage);
-                break;
-            case MESSAGE_READ:
-                byte[] readBuf = (byte[]) msg.obj;
-                // construct a string from the valid bytes in the buffer
-                String readMessage = new String(readBuf, 0, msg.arg1);
-                //mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage);
-                break;
-            case MESSAGE_DEVICE_NAME:
-                // save the connected device's name
-                //mConnectedDeviceName = msg.getData().getString(DEVICE_NAME);
-                //Toast.makeText(getApplicationContext(), "Connected to "
-                //               + mConnectedDeviceName, Toast.LENGTH_SHORT).show();
-                break;
-            case MESSAGE_TOAST:
-                //Toast.makeText(getApplicationContext(), msg.getData().getString(TOAST),
-                //               Toast.LENGTH_SHORT).show();
-                break;
-            }
+            	case MESSAGE_STATE_CHANGE:
+            		switch (msg.arg1) {
+            			case BluetoothChatService.STATE_CONNECTED:
+            				bConnected = true;
+            				break;
+            			case BluetoothChatService.STATE_CONNECTING:                   
+            				break;
+            			case BluetoothChatService.STATE_LISTEN:
+            			case BluetoothChatService.STATE_NONE:
+            				break;
+            		}
+            		break;
+            	case MESSAGE_WRITE:
+            		//byte[] writeBuf = (byte[]) msg.obj;
+            		// construct a string from the buffer
+            		//String writeMessage = new String(writeBuf);
+            		//mConversationArrayAdapter.add("Me:  " + writeMessage);
+            		break;
+            	case MESSAGE_READ:
+            		//byte[] readBuf = (byte[]) msg.obj;
+            		// construct a string from the valid bytes in the buffer
+            		//String readMessage = new String(readBuf, 0, msg.arg1);
+            		//mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage);
+            		break;
+            	case MESSAGE_DEVICE_NAME:
+            		// save the connected device's name
+            		//mConnectedDeviceName = msg.getData().getString(DEVICE_NAME);
+            		//Toast.makeText(getApplicationContext(), "Connected to "
+            		//               + mConnectedDeviceName, Toast.LENGTH_SHORT).show();
+            		break;
+            	case SEND_NEXT_DATA:
+            		Long d = (Long)msg.obj;
+            		new SendDataTask().execute(d);
+            		break;
+            } 
         }
     };
     
@@ -204,10 +248,6 @@ public class HmdBtCommunicator implements HmdCommunicator {
 	        mChatService.write(send);
 			return null;
 		}
-		
-		protected void onPostExecute() {
-	        //mImageView.setImageBitmap(result);
-	    }
 	}
 
 	@Override
@@ -232,4 +272,55 @@ public class HmdBtCommunicator implements HmdCommunicator {
 		ret[3] = (byte) ((d >>> 24) & 0xff);
 		return ret;
 	 }
+
+	@Override
+	public boolean sendData(String data) {
+		if (mChatService == null)
+			return false;
+		
+		if (mChatService.getState() != BluetoothChatService.STATE_CONNECTED) {
+	           return false;
+	    }
+		
+		/*if (data == last_string_data)
+			return true;*/
+		
+		mHandler.removeMessages(SEND_NEXT_DATA);
+		
+		DirectionPattern d = directions.get(data);
+		long time=0;
+		if (d.getRepeats() != 0	) {
+			for (int i=0; i<d.getRepeats();i++){
+				for (int j=0; j<d.getDataCount();j++){
+					Message m = mHandler.obtainMessage(SEND_NEXT_DATA, d.getData(j));
+					//m.arg1=j;
+					//m.arg2=mRepeatCount;
+					
+					if (j==0 && i==0)
+						mHandler.sendMessage(m);
+					else if ( (j & 0x1)==1) {
+						time += (d.getOnDelay());
+						mHandler.sendMessageDelayed(m, time);	
+					}			
+					else {
+						time += (d.getOffDelay());
+						mHandler.sendMessageDelayed(m, time);
+					}
+				}
+			}
+			
+		}
+		else {
+			Message m = mHandler.obtainMessage(SEND_NEXT_DATA, d.getData(0));
+			mHandler.sendMessage(m);
+		}
+		last_string_data = data;
+		
+	    /*if (last_data != d) {
+	        new SendDataTask().execute(d);
+	        last_data = d;
+	    }*/
+	    return true;
+	}
+	
 }

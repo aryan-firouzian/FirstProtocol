@@ -1,385 +1,238 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".FirstprotocolMainActivity" >
-
-    <Button
-        android:id="@+id/G9"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G9" />
-
-    <Button
-        android:id="@+id/R9"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/G9"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R9" />
-
-    <Button
-        android:id="@+id/G8"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/G9"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G8" />
-
-    <Button
-        android:id="@+id/R8"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G8"
-        android:layout_toRightOf="@+id/R9"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R8" />
-
-    <Button
-        android:id="@+id/G7"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/G8"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G7" />
-
-    <Button
-        android:id="@+id/R7"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G7"
-        android:layout_toRightOf="@+id/R8"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R7" />
-
-    <Button
-        android:id="@+id/G4"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/G7"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G4" />
-
-    <Button
-        android:id="@+id/R4"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G4"
-        android:layout_toRightOf="@+id/R7"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R4" />
-
-    <Button
-        android:id="@+id/G5"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/G4"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G5" />
-
-    <Button
-        android:id="@+id/R5"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G5"
-        android:layout_toRightOf="@+id/R4"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R5" />
-
-    <Button
-        android:id="@+id/G6"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/G5"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G6" />
-
-    <Button
-        android:id="@+id/R6"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G6"
-        android:layout_toRightOf="@+id/R5"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R6" />
-
-    <Button
-        android:id="@+id/G10"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/R9"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G10" />
-
-    <Button
-        android:id="@+id/R10"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/G10"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R10" />
-
-    <Button
-        android:id="@+id/G11"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/R8"
-        android:layout_toRightOf="@+id/G10"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G11" />
-
-    <Button
-        android:id="@+id/R11"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G11"
-        android:layout_toRightOf="@+id/R10"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R11" />
-
-    <Button
-        android:id="@+id/G12"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/R7"
-        android:layout_toRightOf="@+id/G11"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G12" />
-
-    <Button
-        android:id="@+id/R12"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G12"
-        android:layout_toRightOf="@+id/R11"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R12" />
-
-    <Button
-        android:id="@+id/G3"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/R4"
-        android:layout_toRightOf="@+id/G12"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G3" />
-
-    <Button
-        android:id="@+id/R3"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G3"
-        android:layout_toRightOf="@+id/R12"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R3" />
-
-    <Button
-        android:id="@+id/G2"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/R5"
-        android:layout_toRightOf="@+id/G3"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G2" />
-
-    <Button
-        android:id="@+id/R2"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G2"
-        android:layout_toRightOf="@+id/R3"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R2" />
-
-    <Button
-        android:id="@+id/G1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/R6"
-        android:layout_toRightOf="@+id/G2"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/G1" />
-
-    <Button
-        android:id="@+id/R1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/G1"
-        android:layout_toRightOf="@+id/R2"
-        android:onClick="onLEDBtnClicked"
-        android:background="@color/grey"
-        android:text="@string/R1" />
-
-    <Button
-        android:id="@+id/Reset"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:onClick="onResetBtnClicked"
-        android:text="@string/Reset" />
-
-    <Button
-        android:id="@+id/Start"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/Reset"
-        android:onClick="onStartBtnClicked"
-        android:text="@string/Start" />
-
-    <Button
-        android:id="@+id/Connect"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/Start"
-        android:onClick="onConnectBtnClicked"
-        android:text="@string/Connect" />
+    android:orientation="vertical"  
+    xmlns:android="http://schemas.android.com/apk/res/android">
     
-    <Spinner
-        android:id="@+id/BlinkingTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Reset"
-        android:layout_alignParentLeft="true" 
-        android:drawSelectorOnTop="true"
-        android:entries="@array/BlinkingTime">
-    </Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+    	
+	<RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/BlinkingTimeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/BlinkingTime"
-        android:layout_above="@+id/Reset"
-        android:text="@string/BlinkingTime" />
-    
-    <Spinner
-        android:id="@+id/NotBlinkingTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/BlinkingTime"
-        android:layout_alignParentLeft="true"
-        android:drawSelectorOnTop="true"
-        android:entries="@array/NotBlinkingTime" >
-    </Spinner>
+        	<Button
+            	android:id="@+id/centerbutt"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:layout_centerVertical="true"
+            	android:background="@android:color/transparent"
+            	android:text="" />
 
-    <TextView
-        android:id="@+id/NotBlinkingTimeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/NotBlinkingTime"
-		android:layout_above="@+id/BlinkingTime"
-        android:text="@string/NotBlinkingTime" />
-    
-    <Spinner
-        android:id="@+id/Frequency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/NotBlinkingTime"
-        android:layout_alignParentLeft="true" 
-        android:drawSelectorOnTop="true"
-        android:entries="@array/Frequency" >
-    </Spinner>
-
-    <TextView
-        android:id="@+id/FrequencyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/Frequency"
-        android:layout_above="@+id/NotBlinkingTime"
-        android:text="@string/Frequency" />
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button5"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt"
+            	android:layout_centerHorizontal="true"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
         
-    <!-- Spinner
-        android:id="@+id/OnTimeInFrequency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Frequency"
-        android:layout_alignParentLeft="true" 
-        android:drawSelectorOnTop="true"
-        android:entries="@array/OnTimeInFrequency" >
-    </Spinner>
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button3"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/centerbutt"
+            	android:layout_centerHorizontal="true"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
 
-    <TextView
-        android:id="@+id/OnTimeInFrequencyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/OnTimeInFrequency"
-        android:layout_above="@+id/Frequency"
-        android:text="@string/OnTimeInFrequency" / -->
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button6"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt"
+            	android:layout_alignRight="@+id/button1"
+            	android:layout_toLeftOf="@id/button5"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@id/button1"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/centerbutt"
+            	android:layout_toLeftOf="@id/button5"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button4"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt"
+            	android:layout_alignLeft="@+id/button2"
+            	android:layout_toRightOf="@id/button5"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@id/button2"
+           		android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/centerbutt"
+            	android:layout_toRightOf="@id/button3"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+    	</RelativeLayout>
+
+    	<RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1">
+
+        	<Button
+            	android:id="@+id/centerbutt2"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:layout_centerVertical="true"
+            	android:background="@android:color/transparent"
+            	android:text="" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button8"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt2"
+            	android:layout_centerHorizontal="true"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+        
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button11"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/centerbutt2"
+            	android:layout_centerHorizontal="true"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button7"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt2"
+            	android:layout_toLeftOf="@id/button11"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button12"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/centerbutt2"
+            	android:layout_toLeftOf="@id/button11"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button9"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt2"
+            	android:layout_toRightOf="@id/button11"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button10"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/centerbutt2"
+            	android:layout_toRightOf="@id/button11"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+    	</RelativeLayout>
+
+    	</LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/pattern_conf_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
     
-    <TextView
-        android:id="@+id/LED_OrderTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawSelectorOnTop="true"
-        android:layout_above="@+id/Frequency"
-        android:text="" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
 
-</RelativeLayout>
+            <TextView
+        		android:id="@+id/cycles_tv"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/BlinkingTime" />
+            <Spinner
+        		android:id="@+id/cycles_spinner"
+        		android:layout_width="wrap_content"
+       			android:layout_height="wrap_content"
+        		android:drawSelectorOnTop="true"
+        		android:entries="@array/Cycles" 
+        		android:layout_below="@id/cycles_tv" 
+        		android:layout_alignLeft="@id/cycles_tv"/>
+        </RelativeLayout>
+    
+   		<RelativeLayout
+   		    android:layout_width="match_parent"
+   		    android:layout_height="match_parent"
+   		    android:layout_weight="1"
+   		    android:gravity="center_horizontal" >
+
+    		<TextView
+        		android:id="@+id/freq_tv"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/Frequency" />
+    		<Spinner
+        		android:id="@+id/freq_spinner"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:drawSelectorOnTop="true"
+        		android:entries="@array/Frequency" 
+        		android:layout_below="@id/freq_tv" 
+        		android:layout_alignLeft="@id/freq_tv"/>
+		</RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pattern_go_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/go_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="goOnClick"
+                android:text="    Go    " />
+
+
+        <TextView
+                android:id="@+id/log_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true"/>
+
+    </LinearLayout>
+</LinearLayout>
