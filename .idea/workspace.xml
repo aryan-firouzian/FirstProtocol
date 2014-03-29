@@ -75,15 +75,8 @@
       <file leaf-file-name="DeviceListActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/DeviceListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="0" selection-start="6566" selection-end="6566" vertical-scroll-proportion="0.0" vertical-offset="2264" max-vertical-offset="3111">
-              <folding>
-                <element signature="e#2715#2879#0" expanded="true" />
-                <element signature="e#2868#2869#0" expanded="true" />
-                <element signature="e#4764#4808#0" expanded="true" />
-                <element signature="e#6013#6822#0" expanded="true" />
-                <element signature="e#6815#6816#0" expanded="true" />
-                <element signature="e#8067#8110#0" expanded="true" />
-              </folding>
+            <state line="173" column="0" selection-start="6566" selection-end="6566" vertical-scroll-proportion="0.0" vertical-offset="2941" max-vertical-offset="3723">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,7 +84,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+            <state line="15" column="8" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -100,13 +93,8 @@
       <file leaf-file-name="FirstprotocolMainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/FirstprotocolMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="33" selection-start="7000" selection-end="7000" vertical-scroll-proportion="0.19883041" vertical-offset="3077" max-vertical-offset="3995">
-              <folding>
-                <element signature="e#6184#6268#0" expanded="true" />
-                <element signature="e#6263#6264#0" expanded="true" />
-                <element signature="e#6874#7154#0" expanded="true" />
-                <element signature="e#7148#7149#0" expanded="true" />
-              </folding>
+            <state line="202" column="33" selection-start="7000" selection-end="7000" vertical-scroll-proportion="-0.41908008" vertical-offset="3289" max-vertical-offset="3876">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,7 +102,7 @@
       <file leaf-file-name="HmdBtCommunicator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/HmdBtCommunicator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="-9.6" vertical-offset="2837" max-vertical-offset="3604">
+            <state line="210" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4097">
               <folding />
             </state>
           </provider>
@@ -123,7 +111,7 @@
       <file leaf-file-name="BluetoothChatService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/BluetoothChatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="0" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.0" vertical-offset="1652" max-vertical-offset="8075">
+            <state line="133" column="0" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="8568">
               <folding />
             </state>
           </provider>
@@ -132,7 +120,7 @@
       <file leaf-file-name="View.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/view/View.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20196">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20213">
               <folding />
             </state>
           </provider>
@@ -157,9 +145,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="574" />
-    <option name="width" value="792" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,7 +177,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,26 +195,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Firstprotocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Firstprotocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firstprotocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,55 +460,56 @@
       <created>1394537570375</created>
       <updated>1394537570375</updated>
       <workItem from="1394537588105" duration="11391000" />
+      <workItem from="1395835731127" duration="66000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11391000" />
+    <option name="totallyTimeSpent" value="11457000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="574" y="0" width="792" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34094617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39865997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67504185" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67504185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.064032696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20694864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34094617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075528" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -554,8 +526,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67504185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -584,46 +556,76 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/bluetooth/BluetoothAdapter.class">
+    <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/DeviceListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="166" selection-end="166" vertical-scroll-proportion="0.24011299" vertical-offset="0" max-vertical-offset="1632">
+        <state line="173" column="0" selection-start="6566" selection-end="6566" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/FirstprotocolMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="33" selection-start="7000" selection-end="7000" vertical-scroll-proportion="0.0" vertical-offset="3434" max-vertical-offset="3995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/HmdBtCommunicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/BluetoothChatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="8568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/bluetooth/BluetoothAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="166" selection-end="166" vertical-scroll-proportion="0.24011299" vertical-offset="0" max-vertical-offset="1632" />
       </provider>
     </entry>
     <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Looper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="766" selection-end="766" vertical-scroll-proportion="0.33333334" vertical-offset="304" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="25" column="16" selection-start="766" selection-end="766" vertical-scroll-proportion="0.33333334" vertical-offset="304" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="564" selection-end="564" vertical-scroll-proportion="0.33333334" vertical-offset="161" max-vertical-offset="1411">
-          <folding />
-        </state>
+        <state line="17" column="16" selection-start="564" selection-end="564" vertical-scroll-proportion="0.33333334" vertical-offset="161" max-vertical-offset="1411" />
       </provider>
     </entry>
     <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/widget/AbsListView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5440">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5440" />
       </provider>
     </entry>
     <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/widget/AdapterView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.33125" vertical-offset="251" max-vertical-offset="2193">
-          <folding />
-        </state>
+        <state line="22" column="19" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.33125" vertical-offset="251" max-vertical-offset="2193" />
       </provider>
     </entry>
     <entry file="jar://D:/pc files/software/Eclipse/adt-bundle-windows-x86_64-20131030(AndroidSDK)/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="22" selection-start="15089" selection-end="15089" vertical-scroll-proportion="0.33333334" vertical-offset="5600" max-vertical-offset="7565">
-          <folding />
-        </state>
+        <state line="337" column="22" selection-start="15089" selection-end="15089" vertical-scroll-proportion="0.33333334" vertical-offset="5600" max-vertical-offset="7565" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -662,33 +664,21 @@
     <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/DeviceListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="173" column="0" selection-start="6566" selection-end="6566" vertical-scroll-proportion="0.0" vertical-offset="2264" max-vertical-offset="3111">
-          <folding>
-            <element signature="e#2715#2879#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#4764#4808#0" expanded="true" />
-            <element signature="e#6013#6822#0" expanded="true" />
-            <element signature="e#6815#6816#0" expanded="true" />
-            <element signature="e#8067#8110#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/HmdBtCommunicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="-9.6" vertical-offset="2837" max-vertical-offset="3604">
+        <state line="210" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4097">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uni/oulu/firstprotocol/FirstprotocolMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="33" selection-start="7000" selection-end="7000" vertical-scroll-proportion="0.19883041" vertical-offset="3077" max-vertical-offset="3995">
-          <folding>
-            <element signature="e#6184#6268#0" expanded="true" />
-            <element signature="e#6263#6264#0" expanded="true" />
-            <element signature="e#6874#7154#0" expanded="true" />
-            <element signature="e#7148#7149#0" expanded="true" />
-          </folding>
+        <state line="202" column="33" selection-start="7000" selection-end="7000" vertical-scroll-proportion="-0.41908008" vertical-offset="3289" max-vertical-offset="3876">
+          <folding />
         </state>
       </provider>
     </entry>
