@@ -17,6 +17,7 @@ public class FirstprotocolMainActivity extends Activity {
 
     Spinner cyclesSpinner;
     Spinner frequencySpinner;
+    Spinner brightnessSpinner;
     TextView log_textview;
     int blink_time=3;
     double frequency=1;
@@ -31,6 +32,7 @@ public class FirstprotocolMainActivity extends Activity {
         setContentView(R.layout.activity_firstprotocol_main);
      
         cyclesSpinner =(Spinner)findViewById(R.id.cycles_spinner);
+        brightnessSpinner =(Spinner)findViewById(R.id.brightness_spinner);
         frequencySpinner =(Spinner)findViewById(R.id.freq_spinner);
         log_textview = (TextView)findViewById(R.id.log_textview);
         
@@ -88,7 +90,7 @@ public class FirstprotocolMainActivity extends Activity {
 
     public void goOnClick(View v)
     {
-        int [] values = new int[12];
+        int [] values = new int[14];
         values[0] = ((LedButton) findViewById(R.id.button1)).getLedState();
         values[1] = ((LedButton) findViewById(R.id.button2)).getLedState();
         values[2] = ((LedButton) findViewById(R.id.button3)).getLedState();
@@ -101,18 +103,22 @@ public class FirstprotocolMainActivity extends Activity {
         values[9] = ((LedButton) findViewById(R.id.button10)).getLedState();
         values[10] = ((LedButton) findViewById(R.id.button11)).getLedState();
         values[11] = ((LedButton) findViewById(R.id.button12)).getLedState();
-
+        values[12] = ((LedButton) findViewById(R.id.button13)).getLedState();
+        values[13] = ((LedButton) findViewById(R.id.button14)).getLedState();
+        
+        int brightness = Integer.parseInt(brightnessSpinner.getSelectedItem().toString());
+        
         blink_time = Integer.parseInt(cyclesSpinner.getSelectedItem().toString());
         //delay = Integer.parseInt(delaySpinner.getSelectedItem().toString());
         frequency = Double.valueOf(frequencySpinner.getSelectedItem().toString());
 
         SimpleDateFormat sdfDate = new SimpleDateFormat("HH:mm:ss.SSS");
         Date now = new Date();
-        LogString=LogString+"_"+ compileLedValues(values)+","+frequency+","+blink_time+":"+String.valueOf(sdfDate.format(now));
+        LogString=LogString+"_"+ compileLedValues(values, brightness)+","+frequency+","+blink_time+":"+String.valueOf(sdfDate.format(now));
         log_textview.setText(LogString);
 
         DirectionPattern p = new DirectionPattern(new long [] {
-                compileLedValues(values),0x0 }, (int)((0.5/frequency)*1000),
+                compileLedValues(values, brightness),0x0 }, (int)((0.5/frequency)*1000),
                 (int)((0.5/frequency)*1000), (int)(frequency*blink_time));
 
         directions.put(HmdBtCommunicator.DIR_GOAL_KEY, p);
@@ -159,12 +165,12 @@ public class FirstprotocolMainActivity extends Activity {
         }
     }	
 
-	private long compileLedValues(int [] values) {
+	private long compileLedValues(int [] values, int bright) {
 		long ret = 0x0;
 		for (int i=0; i<values.length; i++) {
 			ret |= (long) ((values[i]&0x3) << (i*2));
 		}
 		
-		return ret|0x80000000;
+		return ret|((bright&0xf) << 28);//0xf0000000;
 	}
 }
