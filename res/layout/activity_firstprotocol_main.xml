@@ -206,4 +206,33 @@
 		</RelativeLayout>
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pattern_go_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/go_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="goOnClick"
+                android:text="    Go    " />
+
+
+        <TextView
+                android:id="@+id/log_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true"/>
+
+    </LinearLayout>
 </LinearLayout>
