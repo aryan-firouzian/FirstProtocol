@@ -8,12 +8,14 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:baselineAligned="false"
+        android:gravity="top"
         android:orientation="horizontal" >
     	
 	<RelativeLayout
         	android:layout_width="match_parent"
         	android:layout_height="match_parent"
-        	android:layout_weight="1">
+        	android:layout_weight="1"
+        	android:padding="2dp">
 
         	<Button
             	android:id="@+id/centerbutt"
@@ -51,6 +53,17 @@
             	android:layout_toLeftOf="@id/button5"
             	android:background="@android:color/transparent"
             	android:src="@drawable/green" />
+        	
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button7"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_toLeftOf="@id/centerbutt"
+            	android:layout_alignLeft="@id/button6"
+            	android:layout_above="@+id/button1"
+            	android:layout_below="@id/button6"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green"/>
 
         	<uni.oulu.firstprotocol.LedButton
             	android:id="@id/button1"
@@ -85,7 +98,8 @@
     	<RelativeLayout
         	android:layout_width="match_parent"
         	android:layout_height="match_parent"
-        	android:layout_weight="1">
+        	android:layout_weight="1"
+        	android:padding="2dp">
 
         	<Button
             	android:id="@+id/centerbutt2"
@@ -97,7 +111,7 @@
             	android:text="" />
 
         	<uni.oulu.firstprotocol.LedButton
-            	android:id="@+id/button8"
+            	android:id="@+id/button9"
             	android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
             	android:layout_above="@id/centerbutt2"
@@ -106,7 +120,7 @@
             	android:src="@drawable/green" />
         
         	<uni.oulu.firstprotocol.LedButton
-            	android:id="@+id/button11"
+            	android:id="@+id/button12"
             	android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
             	android:layout_below="@id/centerbutt2"
@@ -115,29 +129,20 @@
             	android:src="@drawable/green" />
 
         	<uni.oulu.firstprotocol.LedButton
-            	android:id="@+id/button7"
+            	android:id="@+id/button8"
             	android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
             	android:layout_above="@id/centerbutt2"
-            	android:layout_toLeftOf="@id/button11"
+            	android:layout_toLeftOf="@+id/button9"
             	android:background="@android:color/transparent"
             	android:src="@drawable/green" />
 
         	<uni.oulu.firstprotocol.LedButton
-            	android:id="@+id/button12"
+            	android:id="@+id/button13"
             	android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
             	android:layout_below="@id/centerbutt2"
-            	android:layout_toLeftOf="@id/button11"
-            	android:background="@android:color/transparent"
-            	android:src="@drawable/green" />
-
-        	<uni.oulu.firstprotocol.LedButton
-            	android:id="@+id/button9"
-            	android:layout_width="wrap_content"
-            	android:layout_height="wrap_content"
-            	android:layout_above="@id/centerbutt2"
-            	android:layout_toRightOf="@id/button11"
+            	android:layout_toLeftOf="@id/button12"
             	android:background="@android:color/transparent"
             	android:src="@drawable/green" />
 
@@ -145,8 +150,28 @@
             	android:id="@+id/button10"
             	android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
+            	android:layout_above="@id/centerbutt2"
+            	android:layout_toRightOf="@id/button9"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button14"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_toRightOf="@id/centerbutt2"
+            	android:layout_alignRight="@id/button10"
+            	android:layout_above="@+id/button11"
+            	android:layout_below="@id/button10"
+            	android:background="@android:color/transparent"
+            	android:src="@drawable/green" />
+        	
+        	<uni.oulu.firstprotocol.LedButton
+            	android:id="@+id/button11"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
             	android:layout_below="@id/centerbutt2"
-            	android:layout_toRightOf="@id/button11"
+            	android:layout_toRightOf="@id/button12"
             	android:background="@android:color/transparent"
             	android:src="@drawable/green" />
 
@@ -205,6 +230,26 @@
         		android:layout_alignLeft="@id/freq_tv"/>
 		</RelativeLayout>
 
+   		<RelativeLayout
+   		    android:layout_width="match_parent"
+   		    android:layout_height="match_parent"
+   		    android:layout_weight="1"
+   		    android:gravity="center_horizontal" >
+
+    		<TextView
+        		android:id="@+id/brightness_tv"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/brightness" />
+    		<Spinner
+        		android:id="@+id/brightness_spinner"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:drawSelectorOnTop="true"
+        		android:entries="@array/brightness_array" 
+        		android:layout_below="@id/brightness_tv" 
+        		android:layout_alignLeft="@id/brightness_tv"/>
+		</RelativeLayout>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/pattern_go_buttons"
